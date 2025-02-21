@@ -1,5 +1,6 @@
 # Collaborative-Intelligence-based-Clinical-Triage-Dataset-CICTD-
-![CICTD Toy Example](https://github.com/user-attachments/assets/f23f61cf-8663-42cd-b7a6-651bb1d6e5f5)
+
+![CICTD Toy Example](https://github.com/user-attachments/assets/c4df408d-fbfa-4613-945f-f35cc544c67e)
 
 
 This repository provides the Collaborative Intelligence-based Clinical Triage Dataset (CICTD) along with the simulation code to facilitate research and development in intelligent clinical triage systems.
