@@ -1,0 +1,278 @@
+{
+  "1": {
+    "doctors": 10,
+    "core_laboratory_tests": {
+      "Complete Blood Count (CBC)": true,
+      "Basic Metabolic Panel (BMP)": true,
+      "Liver Function Tests (LFTs)": true,
+      "Coagulation Studies": true,
+      "Urinalysis (UA)": true,
+      "Type and Screen": true,
+      "Electrolytes (Ionized Calcium, Magnesium, Phosphate)": true,
+      "Renal Function Tests (BUN, Creatinine Clearance)": true,
+      "Inflammatory Markers (CRP, ESR, Procalcitonin)": true
+    },
+    "advanced_tests": {
+      "Point-of-Care Testing (POCT)": {
+        "Fingerstick glucose": true,
+        "Lactate level": true,
+        "Venous/Arterial Blood Gas (VBG/ABG)": true,
+        "PT/INR": true,
+        "Urine hCG (for all reproductive-age females)": true,
+        "Rapid influenza/COVID-19 antigen tests": true
+      },
+      "Critical Time-Sensitive Tests": {
+        "Serial lactate": true,
+        "Troponin-I/T": true,
+        "D-dimer": true,
+        "Lipase": true,
+        "BNP (Brain Natriuretic Peptide)": true,
+        "CK-MB (Creatine Kinase MB)": true
+      },
+      "Toxicology & Drug Screens": {
+        "Salicylate (Aspirin Level)": true,
+        "Acetaminophen Level": true,
+        "Carboxyhemoglobin": true,
+        "Methemoglobin": true,
+        "Opiates, Cocaine, Benzodiazepines": true,
+        "Ethanol Level": true
+      },
+      "Infectious Disease Tests": {
+        "HIV Screening (HIV Ag/Ab)": true,
+        "Hepatitis Panel (HBsAg, Anti-HCV, etc.)": true,
+        "COVID-19, Influenza, RSV": true,
+        "Syphilis (RPR, Treponemal Ab)": true
+      }
+    },
+    "image_studies": {
+      "Basic Image": {
+        "X-ray": true,
+        "EKG (ECG)": true
+      },
+      "Advanced Imaging": {
+        "Ultrasound": true,
+        "CT scan": true,
+        "MRI": true
+      }
+    }
+  },
+  "2": {
+    "doctors": 8,
+    "core_laboratory_tests": {
+      "Complete Blood Count (CBC)": true,
+      "Basic Metabolic Panel (BMP)": true,
+      "Liver Function Tests (LFTs)": true,
+      "Coagulation Studies": true,
+      "Urinalysis (UA)": true,
+      "Type and Screen": true,
+      "Electrolytes (Ionized Calcium, Magnesium, Phosphate)": true,
+      "Renal Function Tests (BUN, Creatinine Clearance)": true,
+      "Inflammatory Markers (CRP, ESR, Procalcitonin)": true
+    },
+    "advanced_tests": {
+      "Point-of-Care Testing (POCT)": {
+        "Fingerstick glucose": true,
+        "Lactate level": true,
+        "Venous/Arterial Blood Gas (VBG/ABG)": true,
+        "PT/INR": true,
+        "Urine hCG (for all reproductive-age females)": true,
+        "Rapid influenza/COVID-19 antigen tests": true
+      },
+      "Critical Time-Sensitive Tests": {
+        "Serial lactate": true,
+        "Troponin-I/T": true,
+        "D-dimer": true,
+        "Lipase": true,
+        "BNP (Brain Natriuretic Peptide)": true,
+        "CK-MB (Creatine Kinase MB)": true
+      },
+      "Toxicology & Drug Screens": {
+        "Salicylate (Aspirin Level)": true,
+        "Acetaminophen Level": true,
+        "Carboxyhemoglobin": true,
+        "Methemoglobin": true,
+        "Opiates, Cocaine, Benzodiazepines": true,
+        "Ethanol Level": true
+      },
+      "Infectious Disease Tests": {
+        "HIV Screening (HIV Ag/Ab)": true,
+        "Hepatitis Panel (HBsAg, Anti-HCV, etc.)": true,
+        "COVID-19, Influenza, RSV": true,
+        "Syphilis (RPR, Treponemal Ab)": true
+      }
+    },
+    "image_studies": {
+      "Basic Image": {
+        "X-ray": true,
+        "EKG (ECG)": true
+      },
+      "Advanced Imaging": {
+        "Ultrasound": true,
+        "CT scan": true,
+        "MRI": true
+      }
+    }
+  },
+  "3": {
+    "doctors": 5,
+    "core_laboratory_tests": {
+      "Complete Blood Count (CBC)": true,
+      "Basic Metabolic Panel (BMP)": true,
+      "Liver Function Tests (LFTs)": true,
+      "Coagulation Studies": true,
+      "Urinalysis (UA)": true,
+      "Type and Screen": true,
+      "Electrolytes (Ionized Calcium, Magnesium, Phosphate)": true,
+      "Renal Function Tests (BUN, Creatinine Clearance)": true,
+      "Inflammatory Markers (CRP, ESR, Procalcitonin)": true
+    },
+    "advanced_tests": {
+      "Point-of-Care Testing (POCT)": {
+        "Fingerstick glucose": true,
+        "Lactate level": true,
+        "Venous/Arterial Blood Gas (VBG/ABG)": true,
+        "PT/INR": true,
+        "Urine hCG (for all reproductive-age females)": true,
+        "Rapid influenza/COVID-19 antigen tests": true
+      }
+    },
+    "image_studies": {
+      "Basic Image": {
+        "X-ray": true,
+        "EKG (ECG)": true
+      },
+      "Advanced Imaging": {
+        "Ultrasound": true,
+        "CT scan": false,
+        "MRI": false
+      }
+    }
+  },
+  "4": {
+    "doctors": 3,
+    "core_laboratory_tests": {
+      "Complete Blood Count (CBC)": true,
+      "Basic Metabolic Panel (BMP)": true,
+      "Liver Function Tests (LFTs)": false,
+      "Coagulation Studies": false,
+      "Urinalysis (UA)": true,
+      "Type and Screen": false,
+      "Electrolytes (Ionized Calcium, Magnesium, Phosphate)": false,
+      "Renal Function Tests (BUN, Creatinine Clearance)": false,
+      "Inflammatory Markers (CRP, ESR, Procalcitonin)": false
+    },
+    "advanced_tests": {
+      "Point-of-Care Testing (POCT)": {
+        "Fingerstick glucose": true,
+        "Lactate level": false,
+        "Venous/Arterial Blood Gas (VBG/ABG)": false,
+        "PT/INR": false,
+        "Urine hCG (for all reproductive-age females)": false,
+        "Rapid influenza/COVID-19 antigen tests": true
+      }
+    },
+    "image_studies": {
+      "Basic Image": {
+        "X-ray": true,
+        "EKG (ECG)": false
+      },
+      "Advanced Imaging": {
+        "Ultrasound": false,
+        "CT scan": false,
+        "MRI": false
+      }
+    }
+  },
+  "5": {
+    "doctors": 2,
+    "core_laboratory_tests": {
+      "Complete Blood Count (CBC)": true,
+      "Basic Metabolic Panel (BMP)": false,
+      "Liver Function Tests (LFTs)": false,
+      "Coagulation Studies": false,
+      "Urinalysis (UA)": true,
+      "Type and Screen": false,
+      "Electrolytes (Ionized Calcium, Magnesium, Phosphate)": false,
+      "Renal Function Tests (BUN, Creatinine Clearance)": false,
+      "Inflammatory Markers (CRP, ESR, Procalcitonin)": false
+    },
+    "advanced_tests": {
+      "Point-of-Care Testing (POCT)": {
+        "Fingerstick glucose": true,
+        "Rapid influenza/COVID-19 antigen tests": true
+      }
+    },
+    "image_studies": {
+      "Basic Image": {
+        "X-ray": false,
+        "EKG (ECG)": false
+      },
+      "Advanced Imaging": {
+        "Ultrasound": false,
+        "CT scan": false,
+        "MRI": false
+      }
+    }
+  },
+  "6": {
+    "doctors": 1,
+    "core_laboratory_tests": {
+      "Complete Blood Count (CBC)": false,
+      "Basic Metabolic Panel (BMP)": false,
+      "Liver Function Tests (LFTs)": false,
+      "Coagulation Studies": false,
+      "Urinalysis (UA)": true,
+      "Type and Screen": false,
+      "Electrolytes (Ionized Calcium, Magnesium, Phosphate)": false,
+      "Renal Function Tests (BUN, Creatinine Clearance)": false,
+      "Inflammatory Markers (CRP, ESR, Procalcitonin)": false
+    },
+    "advanced_tests": {
+      "Point-of-Care Testing (POCT)": {
+        "Fingerstick glucose": true,
+        "Rapid influenza/COVID-19 antigen tests": true
+      }
+    },
+    "image_studies": {
+      "Basic Image": {
+        "X-ray": false,
+        "EKG (ECG)": false
+      },
+      "Advanced Imaging": {
+        "Ultrasound": false,
+        "CT scan": false,
+        "MRI": false
+      }
+    }
+  },
+  "7": {
+    "doctors": 1,
+    "core_laboratory_tests": {
+      "Complete Blood Count (CBC)": false,
+      "Basic Metabolic Panel (BMP)": false,
+      "Liver Function Tests (LFTs)": false,
+      "Coagulation Studies": false,
+      "Urinalysis (UA)": false,
+      "Type and Screen": false,
+      "Electrolytes (Ionized Calcium, Magnesium, Phosphate)": false,
+      "Renal Function Tests (BUN, Creatinine Clearance)": false,
+      "Inflammatory Markers (CRP, ESR, Procalcitonin)": false
+    },
+    "advanced_tests": {
+      "Point-of-Care Testing (POCT)": {
+        "Fingerstick glucose": true
+      }
+    },
+    "image_studies": {
+      "Basic Image": {
+        "X-ray": false,
+        "EKG (ECG)": false
+      },
+      "Advanced Imaging": {
+        "Ultrasound": false,
+        "CT scan": false,
+        "MRI": false
+      }
+    }
+  }
+}

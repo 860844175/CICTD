@@ -2,45 +2,57 @@
 
 ![CICTD Toy Example](https://github.com/user-attachments/assets/c4df408d-fbfa-4613-945f-f35cc544c67e)
 
-
 This repository provides the Collaborative Intelligence-based Clinical Triage Dataset (CICTD) along with the simulation code to facilitate research and development in intelligent clinical triage systems.
 
+
 # Abstract
+
 AI offers the important potential to enhance Emergency Room (ER) triage efficiency  but a lack of trust from healthcare professionals and patients limits its adoption due to concerns over accuracy and reliability. To address this, we introduce the Collaborative Intelligence-based Clinical Triage Dataset (CICTD), a large-scale benchmark containing patient requests and ER doctor annotations for triage decision-making. Along with CICTD, we define key evaluation tasks, including diagnostic question generation, ESI level prediction, triage recommendations, and misdiagnosis prediction. Our approach emphasizes a human-in-the-loop framework, ensuring AI escalates uncertain cases to experts, balancing automation with trust and improving ER triage efficiency.
+
+# Contribution:
+
+- **Introducing CICTD**, a large-scale benchmark dataset with real-world patient ER requests and expert annotations for triage decisions.
+- **Defining** multiple key evaluation tasks along with evaluation metrics, supporting both individual and city-wide AI or CI-driven triage decisions.
+- **Conceptualizing** a human-in-the-loop AI framework, ensuring AI models defer to experts when uncertainty is high, enhancing trust and efficiency in ER decision-making.
+- **Providing** a foundation for the development of trustworthy AI systems in emergency medicine, bridging the gap between AI automation and expert-driven healthcare.
+
+# Example of Structured MIMIC-IV Record and Corresponding GPT-4 Contextualized Input
+| **Processed MIMIC-IV Structured Record** | **GPT-4 Contextualized Output** |
+| --- | --- |
+| **Subject ID:** 11714491<br>**Stay ID:** 30000012<br>**Age:** 66<br>**Gender:** Female<br>**Arrival transport:** AMBULANCE<br>**Disposition:** ADMITTED<br>**Chief Complaint (keyword):** CHANGE IN MENTAL STATUS<br>**Vital Signs:**<br>HR 96 bpm;<br>BP 98.8 mmHg;<br>RR 18 /min<br>**Discharge Report:** She presents with CC of AMS and confusion noted since 9 am this morning, noted by her visiting nurse and husband. Husband accompanied her to the ED and reports that these episodes of confusion have been recurrent, however, she had been doing well since her discharge last week. Today she has expressed forgetfulness …<br>**ICD-9 Code:** 5722<br>**ICD title (Diagnosis):** HEPATIC ENCEPHALOPATHY<br>**Acuity:** 2.0<br>**Intime:** 2126-02-14 20:22:00<br>**Outtime:** 2126-02-15 01:59:00 | **Free-Text Chief Complaint:**<br>“I feel really confused and can’t remember things, like why I was putting in my dentures or what to do in the kitchen, and it’s really scary.”<br><br>**History Summary:**<br>The patient has a significant past medical history including alcoholic cirrhosis diagnosed several years ago, classified as Child-Pugh Class C, complicated by Grade II esophageal varices (treated with banding), hepatic encephalopathy, hepatocellular carcinoma (HCC) in segment IV, and portal venous thrombosis. She has a history of chronic back pain, myelodysplastic syndrome, and chronic severe cramps and muscle spasms. She has also had cataract surgery and a cerebellar TIA without residual deficits. She has a history of gastrointestinal bleeding and is being considered for liver transplant. Her medications include furosemide, spironolactone, tramadol, gabapentin, bisacodyl, multivitamins, pantoprazole, and rifaximin. She has a history of hypotension and hyponatremia, which have required hospitalization. Her family history includes alcoholic liver disease in her father and diabetes on her father's side. She has no siblings and no history of coronary artery disease or myocardial infarction.<br><br>**Physician–Patient Dialogue:**<br>- **Question 1:** When did you first start feeling confused and having trouble remembering things?<br>&nbsp;&nbsp;**Answer 1:** I started feeling confused and having trouble remembering things this morning, around 9 AM.<br><br>- **Question 2:** Have you noticed any changes in your behavior or personality recently?<br>&nbsp;&nbsp;**Answer 2:** Yes, I’ve noticed that I’ve been more forgetful and have trouble focusing on tasks.<br><br>- **Question 3:** Given your history of hepatic encephalopathy, have you had any episodes of confusion or memory loss in the past?<br>&nbsp;&nbsp;**Answer 3:** Yes, I’ve had episodes of confusion and memory loss before, but they usually aren’t this bad. |
 
 
 # Statistics
-## Dataset Statistics
-| **Category** | **Statistic** | **Value / Distribution** |
-|-------------|-------------|--------------------------|
-| **Overall Scale** | Total ED Visits | 12000 |
-|  | Unique Patients | 11407 |
-|  | Expert-Annotated Cases | 300 |
-|  | % ED Visits with Discharge Report | 42.58% |
-|  | Simulation Time Span | 50 Days (1/3 Normal, 1/3 Flu, 1/3 Covid periods) |
-|  | # of Cities | 6 (Boston, Houston, Minneapolis, St. Louis, Detroit, New Orleans) |
-|  | # of Lab Tests Covered | 36 (CBC, BMP, etc) |
-| **ESI Distribution (# of Patients)** | ESI 1 | 640 |
-|  | ESI 2 | 3817 |
-|  | ESI 3 | 6618 |
-|  | ESI 4 | 892 |
-|  | ESI 5 | 33 |
-| **Hourly Patient Arrival Distribution** | Late Night (00:00–06:00) | Mean: 34.91, Std: 21.15 |
-|  | Morning (06:00–12:00) | Mean: 85.714, Std: 51.71 |
-|  | Afternoon (12:00–18:00) | Mean: 102.71, Std: 62.51 |
-|  | Evening (18:00–24:00) | Mean: 119.51, Std: 72.93 |
-| **ED Outcomes** | % of Admitted | 31.45% |
-|  | % of Went Home | 62.56% |
 
+## Dataset Statistics
+
+| **Category**                            | **Statistic**               | **Value / Distribution**                                    |
+| --------------------------------------------- | --------------------------------- | ----------------------------------------------------------------- |
+| **Overall Scale**                       | Total ED Visits                   | 12000                                                             |
+|                                               | Unique Patients                   | 11407                                                             |
+|                                               | Expert-Annotated Cases            | 300                                                               |
+|                                               | % ED Visits with Discharge Report | 42.58%                                                            |
+|                                               | Simulation Time Span              | 50 Days (1/3 Normal, 1/3 Flu, 1/3 Covid periods)                  |
+|                                               | # of Cities                       | 6 (Boston, Houston, Minneapolis, St. Louis, Detroit, New Orleans) |
+|                                               | # of Lab Tests Covered            | 36 (CBC, BMP, etc)                                                |
+| **ESI Distribution (# of Patients)**    | ESI 1                             | 640                                                               |
+|                                               | ESI 2                             | 3817                                                              |
+|                                               | ESI 3                             | 6618                                                              |
+|                                               | ESI 4                             | 892                                                               |
+|                                               | ESI 5                             | 33                                                                |
+| **Hourly Patient Arrival Distribution** | Late Night (00:00–06:00)         | Mean: 34.91, Std: 21.15                                           |
+|                                               | Morning (06:00–12:00)            | Mean: 85.714, Std: 51.71                                          |
+|                                               | Afternoon (12:00–18:00)          | Mean: 102.71, Std: 62.51                                          |
+|                                               | Evening (18:00–24:00)            | Mean: 119.51, Std: 72.93                                          |
+| **ED Outcomes**                         | % of Admitted                     | 31.45%                                                            |
+|                                               | % of Went Home                    | 62.56%                                                            |
 
 ## Annotation Task Description
-| **Task Name**                        | **Annotation Goal**                                                  |
-|---------------------------------------|----------------------------------------------------------------------|
-| **Diagnosis Question**                | Annotate 10 given diagnostic questions as **Essential / Optional / Wrong**. |
-| **Missing Essential Question**        | If none of the 10 given diagnostic questions cover the most critical inquiry, provide the missing essential question. |
-| **Diagnosis Lab Test Recommendation** | Identify and annotate the **recommended diagnostic lab tests** for the patient. |
-| **ER Test Recommendation**            | Determine and annotate the **type of emergency room (ER) the patient should visit** (e.g., ER with Oncology and Pulmonology Support). |
-| **Maximum Safe Waiting Time**         | Estimate the **maximum safe waiting time** for the patient before seeking medical attention. |
 
-
-
+| Annotation Task               | Description                                                                                     | Label Choices                                                  |
+|------------------------------|-------------------------------------------------------------------------------------------------|----------------------------------------------------------------|
+| Physician Question Relevance | Expert annotators judge how each physician-posed question contributes to accurate triage decision-making. | Perfectly relevant, Partially relevant, Irrelevant, Incorrect |
+| ESI Level Assignment         | Assign preliminary Emergency Severity Index (ESI) level based on the narrative and dialogue.     | 1, 2, 3, 4, 5                                                  |
+| ER Recommendation            | Recommend the most appropriate treatment location given initial patient presentation.            | Tertiary ED, Community ED, Urgent Care, Observation Unit, Other |
+| Safe Wait Time Estimation    | Estimate the maximum safe waiting period before patient risk escalates.                         | 0–10 min, 10–30 min, 30–60 min, 60–240 min, >240 min          |
+| Laboratory Test Recommendation | Determine whether each common laboratory test should be ordered.                                 | CBC; BMP; Troponin; D-dimer; Urinalysis, etc                  |
