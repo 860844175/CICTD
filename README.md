@@ -1,4 +1,4 @@
-# Collaborative-Intelligence-based-Clinical-Triage-Dataset-CICTD-
+# Collaborative-Intelligence-based-Clinical-Triage-Dataset-CICTD
 
 ![CICTD Toy Example](https://github.com/user-attachments/assets/c4df408d-fbfa-4613-945f-f35cc544c67e)
 
@@ -6,11 +6,9 @@ This repository provides the Collaborative Intelligence-based Clinical Triage Da
 
 
 # Abstract
-
 AI offers the important potential to enhance Emergency Room (ER) triage efficiency  but a lack of trust from healthcare professionals and patients limits its adoption due to concerns over accuracy and reliability. To address this, we introduce the Collaborative Intelligence-based Clinical Triage Dataset (CICTD), a large-scale benchmark containing patient requests and ER doctor annotations for triage decision-making. Along with CICTD, we define key evaluation tasks, including diagnostic question generation, ESI level prediction, triage recommendations, and misdiagnosis prediction. Our approach emphasizes a human-in-the-loop framework, ensuring AI escalates uncertain cases to experts, balancing automation with trust and improving ER triage efficiency.
 
 # Contribution:
-
 - **Introducing CICTD**, a large-scale benchmark dataset with real-world patient ER requests and expert annotations for triage decisions.
 - **Defining** multiple key evaluation tasks along with evaluation metrics, supporting both individual and city-wide AI or CI-driven triage decisions.
 - **Conceptualizing** a human-in-the-loop AI framework, ensuring AI models defer to experts when uncertainty is high, enhancing trust and efficiency in ER decision-making.
