@@ -56,3 +56,16 @@ AI offers the important potential to enhance Emergency Room (ER) triage efficien
 | ER Recommendation            | Recommend the most appropriate treatment location given initial patient presentation.            | Tertiary ED, Community ED, Urgent Care, Observation Unit, Other |
 | Safe Wait Time Estimation    | Estimate the maximum safe waiting period before patient risk escalates.                         | 0–10 min, 10–30 min, 30–60 min, 60–240 min, >240 min          |
 | Laboratory Test Recommendation | Determine whether each common laboratory test should be ordered.                                 | CBC; BMP; Troponin; D-dimer; Urinalysis, etc                  |
+
+
+
+# Simulation Assumption and Method
+For this study, we adopt a simplified model to assess the feasibility of our triage chatbot in an emergency setting. Given the complexity of real-world emergency department operations, our model is designed to capture the essential elements of the triage and treatment process while maintaining clarity and efficiency in simulation.
+
+First, we assume that the time required for triage is consistent across all patients, regardless of the number of individuals waiting to be assessed. While, in reality, triage time may vary depending on patient volume and the severity of each case, our model applies an average triage time that reflects typical emergency department conditions.
+
+Second, our model features a single queue for the doctor, where patients are seen in the order they arrive after triage. While there is technically a separate queue for the triage nurse in real-world settings, we simplify this aspect by assuming all patients experience the same average triage time before entering the doctor’s queue.
+
+Third, patient wait times for a doctor are determined by two key factors: (1) position in the queue, which is based on arrival order after triage; and (2) doctor availability, as each doctor can only treat one patient at a time, though they may manage multiple cases simultaneously up to a predefined capacity.
+
+By focusing on these fundamental assumptions, our model provides a structured yet adaptable foundation for evaluating the role of triage automation in emergency care. Future iterations may incorporate additional complexities such as dynamic triage wait times, real-time re-prioritization based on patient condition, and variability in triage nurse efficiency.
